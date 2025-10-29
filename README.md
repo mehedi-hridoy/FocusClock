@@ -1,11 +1,10 @@
 # 🕒 Focus Clock
 
-**Minimal, configurable desk clock & focus timer — optimized for landscape and always‑on displays.**
+**Your all-in-one LED desk clock replacement app — with timer, stopwatch, alarms & reminders. Built for landscape mode and always-on displays.**
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.24.5-02569B?logo=flutter)](https://flutter.dev) 
 [![Dart](https://img.shields.io/badge/Dart-3.5.4-0175C2?logo=dart)](https://dart.dev) 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
 
 ### 📥 Download APK
 
@@ -13,78 +12,70 @@
 
 ---
 
-## Quick links
+## Overview
 
-- APK: `./Focus Clock.apk`
-- Screenshots: `docs/screenshots/` (organized by category)
-- Contributing: `CONTRIBUTING.md`
+Focus Clock is your LED desk clock replacement — a full-featured Android app designed to sit on your desk or nightstand. No need for expensive LED clocks when you have an old phone or tablet.
 
----
-
-## Overview (short)
-
-Focus Clock is a compact Android application designed to serve as a readable desk clock, with integrated timer, stopwatch, alarms and reminders. It focuses on reliability, low visual clutter, and landscape-first presentation.
-
-Design goals:
-- readable at a distance (large digits)
-- minimal interactions (tap/double-tap/swipe)
-- configurable color & brightness
-- accurate timers & alarms (supports exact alarms)
+**Why Focus Clock?**
+- Replaces physical LED desk clocks
+- Always-on display support
+- Large, readable digits in landscape mode
+- Multiple watch faces with customizable colors
+- Integrated timer, stopwatch, alarms & reminders
 
 ---
 
-## Screenshot gallery
+## 📱 Screenshots
 
-All images are stored in `docs/screenshots/`. The gallery below is intentionally visual-first and minimal.
+### 🎬 Onboarding Experience
 
-### Onboarding
+![Onboarding 1](docs/screenshots/onboarding/onboarding1.png)
+![Onboarding 2](docs/screenshots/onboarding/onboarding2.png)
+![Onboarding 3](docs/screenshots/onboarding/onboarding3.png)
+![Onboarding 4](docs/screenshots/onboarding/onboarding4.png)
+![Onboarding 5](docs/screenshots/onboarding/onboarding5.png)
+![Onboarding 6](docs/screenshots/onboarding/onboarding6.png)
 
-<table>
-  <tr>
-    <td><img src="docs/screenshots/onboarding/onboarding_1.jpg" width="360"/></td>
-    <td><img src="docs/screenshots/onboarding/onboarding_2.jpg" width="360"/></td>
-  </tr>
-  <tr>
-    <td><img src="docs/screenshots/onboarding/onboarding_3.jpg" width="360"/></td>
-    <td><img src="docs/screenshots/onboarding/onboarding_4.jpg" width="360"/></td>
-  </tr>
-</table>
+### 🏠 Home Screen
 
-### Home & Settings
+![Home Page](docs/screenshots/home/homePage.png)
 
-<table>
-  <tr>
-    <td><img src="docs/screenshots/home/home_1.jpg" width="420"/></td>
-    <td><img src="docs/screenshots/settings/settings_dialog.jpg" width="420"/></td>
-  </tr>
-</table>
+### 🕐 Watch Faces
 
-### Watch faces (examples)
+![Clock Face 1](docs/screenshots/clock/clock1.png)
+![Clock Face 2](docs/screenshots/clock/clock2.png)
+![Clock Face 3](docs/screenshots/clock/clock3.png)
+![Clock Face 4](docs/screenshots/clock/clock4.png)
 
-<table>
-  <tr>
-    <td><img src="docs/screenshots/clock/clock_face_1.jpg" width="360"/></td>
-    <td><img src="docs/screenshots/clock/clock_face_2.jpg" width="360"/></td>
-  </tr>
-</table>
+### ⏱️ Timer
 
-### Timer & Stopwatch
+![Timer 1](docs/screenshots/timer/timer1.png)
+![Timer 2](docs/screenshots/timer/timer2.png)
+![Timer 3](docs/screenshots/timer/timer3.png)
 
-<table>
-  <tr>
-    <td><img src="docs/screenshots/timer/timer_settings.jpg" width="360"/></td>
-    <td><img src="docs/screenshots/timer/timer_running.jpg" width="360"/></td>
-  </tr>
-</table>
+### ⏲️ Stopwatch
 
-### Alarms & Reminders
+![Stopwatch](docs/screenshots/stopwatch/stopwatch.png)
 
-<table>
-  <tr>
-    <td><img src="docs/screenshots/alarm/alarm_list.jpg" width="360"/></td>
-    <td><img src="docs/screenshots/reminder/reminder_list.jpg" width="360"/></td>
-  </tr>
-</table>
+### 🔔 Alarms
+
+![Alarm List](docs/screenshots/alarm/alarm.png)
+![Alarm 2](docs/screenshots/alarm/alarm2.png)
+![Alarm 3](docs/screenshots/alarm/alarm3.png)
+![Alarm 4](docs/screenshots/alarm/alarm4.png)
+![Alarm 5](docs/screenshots/alarm/alarm5.png)
+
+### 📝 Reminders
+
+![Reminder 1](docs/screenshots/reminder/remainder1.png)
+![Reminder 2](docs/screenshots/reminder/remainder2.png)
+![Reminder 3](docs/screenshots/reminder/remainder3.png)
+![Reminder 4](docs/screenshots/reminder/remainder4.png)
+![Reminder 5](docs/screenshots/reminder/remainder5.png)
+
+### ⚙️ Settings
+
+![Settings](docs/screenshots/settings/settings.png)
 
 ---
 
