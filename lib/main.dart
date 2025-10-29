@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'core/constants/app_themes.dart';
 import 'data/services/wakelock_service.dart';
 import 'data/services/notification_service.dart';
@@ -16,6 +18,9 @@ import 'presentation/screens/onboarding_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize Firebase
+  await Firebase.initializeApp();
 
   // Initialize notification service early
   await NotificationService().initialize();
@@ -37,6 +42,12 @@ void main() async {
 class FocusClockApp extends StatelessWidget {
   const FocusClockApp({super.key});
 
+  // Create FirebaseAnalytics instance
+  static FirebaseAnalytics analytics = FirebaseAnalytics.instance;
+  static FirebaseAnalyticsObserver observer = FirebaseAnalyticsObserver(
+    analytics: analytics,
+  );
+
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -56,6 +67,8 @@ class FocusClockApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             theme: AppThemes.darkNeonTheme,
             home: const MainScreen(),
+            // Add Firebase Analytics observer for screen tracking
+            navigatorObservers: [observer],
           );
         },
       ),
