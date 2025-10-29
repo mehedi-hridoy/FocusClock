@@ -8,7 +8,7 @@
 
 ### 📥 Download APK
 
-**Focus Clock v1.0.0 —** download: `./Focus Clock.apk` (52 MB)
+**[⬇️ Download Focus Clock v1.0.0 (52 MB)](https://github.com/mehedi-hridoy/FocusClock/raw/main/Focus%20Clock.apk)**
 
 ---
 
