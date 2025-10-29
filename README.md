@@ -1,188 +1,183 @@
-
-
-
-<div align="center">
-
 # 🕒 Focus Clock
 
-**Beautiful time management companion with customizable neon displays**
+**Minimal, configurable desk clock & focus timer — optimized for landscape and always‑on displays.**
 
-[![Flutter](https://img.shields.io/badge/Flutter-3.24.5-02569B?logo=flutter)](https://flutter.dev)
-[![Dart](https://img.shields.io/badge/Dart-3.5.4-0175C2?logo=dart)](https://dart.dev)
+[![Flutter](https://img.shields.io/badge/Flutter-3.24.5-02569B?logo=flutter)](https://flutter.dev) 
+[![Dart](https://img.shields.io/badge/Dart-3.5.4-0175C2?logo=dart)](https://dart.dev) 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android)](https://www.android.com)
+
 
 ### 📥 Download APK
 
-**[⬇️ Download Focus Clock v1.0.0 (52 MB)](../../releases/download/v1.0.0/Focus.Clock.apk)**
-
-</div>
+**Focus Clock v1.0.0 —** download: `./Focus Clock.apk` (52 MB)
 
 ---
 
-## � Screenshots
+## Quick links
 
-### 🎬 Onboarding
+- APK: `./Focus Clock.apk`
+- Screenshots: `docs/screenshots/` (organized by category)
+- Contributing: `CONTRIBUTING.md`
+
+---
+
+## Overview (short)
+
+Focus Clock is a compact Android application designed to serve as a readable desk clock, with integrated timer, stopwatch, alarms and reminders. It focuses on reliability, low visual clutter, and landscape-first presentation.
+
+Design goals:
+- readable at a distance (large digits)
+- minimal interactions (tap/double-tap/swipe)
+- configurable color & brightness
+- accurate timers & alarms (supports exact alarms)
+
+---
+
+## Screenshot gallery
+
+All images are stored in `docs/screenshots/`. The gallery below is intentionally visual-first and minimal.
+
+### Onboarding
 
 <table>
   <tr>
-    <td><img src="docs/screenshots/onboarding/onboarding_1.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/onboarding/onboarding_2.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/onboarding/onboarding_3.jpg" width="250"/></td>
+    <td><img src="docs/screenshots/onboarding/onboarding_1.jpg" width="360"/></td>
+    <td><img src="docs/screenshots/onboarding/onboarding_2.jpg" width="360"/></td>
   </tr>
   <tr>
-    <td><img src="docs/screenshots/onboarding/onboarding_4.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/onboarding/onboarding_5.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/onboarding/onboarding_6.jpg" width="250"/></td>
+    <td><img src="docs/screenshots/onboarding/onboarding_3.jpg" width="360"/></td>
+    <td><img src="docs/screenshots/onboarding/onboarding_4.jpg" width="360"/></td>
   </tr>
 </table>
 
-### 🏠 Home & Settings
+### Home & Settings
 
 <table>
   <tr>
-    <td><img src="docs/screenshots/home/home_drawer.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/settings/settings_dialog.jpg" width="250"/></td>
+    <td><img src="docs/screenshots/home/home_1.jpg" width="420"/></td>
+    <td><img src="docs/screenshots/settings/settings_dialog.jpg" width="420"/></td>
   </tr>
 </table>
 
-### 🕐 Watch Faces
+### Watch faces (examples)
 
 <table>
   <tr>
-    <td><img src="docs/screenshots/clock/clock_face_1.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/clock/clock_face_2.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/clock/clock_face_3.jpg" width="250"/></td>
-  </tr>
-  <tr>
-    <td colspan="3" align="center"><img src="docs/screenshots/clock/clock_face_4.jpg" width="250"/></td>
+    <td><img src="docs/screenshots/clock/clock_face_1.jpg" width="360"/></td>
+    <td><img src="docs/screenshots/clock/clock_face_2.jpg" width="360"/></td>
   </tr>
 </table>
 
-### ⏱️ Timer & Stopwatch
+### Timer & Stopwatch
 
 <table>
   <tr>
-    <td><img src="docs/screenshots/timer/timer_running.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/timer/timer_settings.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/timer/timer_complete.jpg" width="250"/></td>
-  </tr>
-  <tr>
-    <td colspan="3" align="center"><img src="docs/screenshots/stopwatch/stopwatch.jpg" width="250"/></td>
+    <td><img src="docs/screenshots/timer/timer_settings.jpg" width="360"/></td>
+    <td><img src="docs/screenshots/timer/timer_running.jpg" width="360"/></td>
   </tr>
 </table>
 
-### 🔔 Alarms
+### Alarms & Reminders
 
 <table>
   <tr>
-    <td><img src="docs/screenshots/alarm/alarm_list.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/alarm/add_alarm.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/alarm/alarm_settings.jpg" width="250"/></td>
-  </tr>
-  <tr>
-    <td><img src="docs/screenshots/alarm/alarm_ringing.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/alarm/alarm_ringing_2.jpg" width="250"/></td>
-  </tr>
-</table>
-
-### 📝 Reminders
-
-<table>
-  <tr>
-    <td><img src="docs/screenshots/reminder/reminder_list.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/reminder/add_reminder.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/reminder/reminder_date.jpg" width="250"/></td>
-  </tr>
-  <tr>
-    <td><img src="docs/screenshots/reminder/reminder_time.jpg" width="250"/></td>
-    <td><img src="docs/screenshots/reminder/reminder_added.jpg" width="250"/></td>
+    <td><img src="docs/screenshots/alarm/alarm_list.jpg" width="360"/></td>
+    <td><img src="docs/screenshots/reminder/reminder_list.jpg" width="360"/></td>
   </tr>
 </table>
 
 ---
 
-## ✨ Features
+## Key features (short)
 
-- 🎨 **5 Unique Watch Faces** - LED, segment, rounded, large digit, flip clock
-- 🌈 **36+ Preset Colors** - Plus custom RGB picker for unlimited colors
-- ⏱️ **Smart Timer** - Quick presets, countdown direction toggle (reverse/forward)
-- ⏲️ **Stopwatch** - Precise timing with pause/resume
-- 🔔 **Multiple Alarms** - Custom labels, repeat days, ringtones, vibration
-- 📝 **Reminders** - Date/time based with live countdown
-- 🌙 **Always-On Display** - Screen stays active, perfect for desk/nightstand
-- 🌍 **Auto Timezone** - Detects location + Dhaka timezone option
-- 📱 **Landscape Mode** - Optimized horizontal viewing
-- 🎮 **Gesture Controls** - Swipe, double-tap, long-press interactions
-- 🔆 **Brightness Control** - Adjustable display brightness
-- 🔕 **Silent Animations** - Smooth transitions without sound
+- 5 watch faces (LED, segment, rounded, large-digit, flip)
+- 36+ preset colors + RGB custom picker
+- Timer with reversible countdown direction (60→0 or 0→60)
+- Stopwatch with lap support
+- Multiple alarms and reminders with repeat and ringtones
+- Landscape-first, always-on display
 
 ---
 
-## 📥 Installation
+## Developer notes (concise / senior-dev style)
 
-1. **Download** the APK from [Releases](../../releases)
-2. **Enable** "Install from Unknown Sources" in Android settings
-3. **Open** the downloaded APK file
-4. **Install** and launch Focus Clock
+### Contract (inputs / outputs / error modes)
+- Inputs: UI gestures (tap, double-tap, long-press, swipe), settings, scheduled alarm/reminder payloads.
+- Outputs: full-screen rendering, local notifications, alarm audio/vibration, persisted settings.
+- Errors: permission denial, OS battery optimizations, missing audio files. App should fail gracefully and log.
+
+### Where to look (quick map)
+- Entry: `lib/main.dart`
+- Screens: `lib/presentation/screens/` (clock, timer, stopwatch, alarm, reminder)
+- Widgets: `lib/presentation/widgets/`
+- State: `lib/state/` (`timer_provider.dart`, `settings_provider.dart`, etc.)
+- Services: `lib/core/services/` (alarm_service, notification_service)
+- Assets/screenshots: `docs/screenshots/`
+
+### Run & build (commands)
+
+Install dependencies and run on a device/emulator:
+
+```bash
+flutter pub get
+flutter run -d <device-id>
+```
+
+Build release APK:
+
+```bash
+flutter clean
+flutter pub get
+flutter build apk --release
+```
+
+### Tests
+
+Run unit and widget tests:
+
+```bash
+flutter test
+```
+
+Integration tests (if present): use `integration_test` and run via `flutter test` or `flutter drive` as configured.
+
+### Release checklist
+- Bump `version` / `buildNumber` in `pubspec.yaml`.
+- Run `flutter build apk --release` and verify on target devices.
+- Tag and push a release; attach `Focus.Clock.apk` in GitHub releases and include changelog.
+
+Minimal release commands:
+
+```bash
+git add .
+git commit -m "release: v1.0.0"
+git tag -a v1.0.0 -m "Focus Clock v1.0.0"
+git push origin main --tags
+```
+
+### CI suggestions (lightweight)
+- `flutter format --set-exit-if-changed .`
+- `flutter analyze`
+- `flutter test`
+- Optional: `fastlane` for Play Store automation
+
+### Troubleshooting (common)
+- App won't install: enable "Install unknown apps" and ensure selected APK matches device ABI.
+- Alarms not firing: verify Exact Alarms permission and remove battery optimizations for the app.
+- UI performance issues: run DevTools profiler and check main-thread work.
 
 ---
 
-## 📋 Requirements
+## Contributing
 
-| Requirement | Minimum |
-|-------------|---------|
-| **Android Version** | 5.0 (Lollipop) or higher |
-| **RAM** | 2 GB |
-| **Storage** | 100 MB free space |
-| **Permissions** | Notifications, Exact Alarms |
+Please follow `CONTRIBUTING.md`. Keep PRs focused and include tests for behavior changes.
 
 ---
 
-## ️ Tech Stack
+## License
 
-| Category | Technology |
-|----------|-----------|
-| **Framework** | Flutter 3.24.5 |
-| **Language** | Dart 3.5.4 |
-| **State Management** | Provider |
-| **Local Storage** | SharedPreferences |
-| **Notifications** | flutter_local_notifications |
-| **Analytics** | Firebase Analytics |
-| **Audio** | flutter_ringtone_player |
+MIT — see `LICENSE` for details.
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
----
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) for details.
-
----
-
-## 👨‍💻 Author
-
-**Mehedi Hasan Hridoy**
-- GitHub: [@mehedi-hridoy](https://github.com/mehedi-hridoy)
-
----
-
-<div align="center">
-
-**Made with ❤️ using Flutter**
-
-⭐ Star this repo if you like it!
-
-</div>
-
+Made with ❤️ using Flutter
