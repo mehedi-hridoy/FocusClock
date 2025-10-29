@@ -1,357 +1,711 @@
-<div align="center"># 🕒 Focus Clock - Flutter App
+<div align="center"><div align="center"># 🕒 Focus Clock - Flutter App
 
 
 
-# 🕒 Focus ClockA minimal, professional-grade LED table clock replacement app with auto timezone detection, Dhaka timezone option, landscape orientation, and screen always-on mode.
+# 🕒 Focus Clock
 
 
 
-### *A Minimalist, Feature-Rich Clock App for Android*## ✨ Features
+*Your all-in-one time management companion*# 🕒 Focus ClockA minimal, professional-grade LED table clock replacement app with auto timezone detection, Dhaka timezone option, landscape orientation, and screen always-on mode.
 
 
+
+[![Flutter](https://img.shields.io/badge/Flutter-3.24.5-02569B?logo=flutter)](https://flutter.dev)
+
+[![Dart](https://img.shields.io/badge/Dart-3.5.4-0175C2?logo=dart)](https://dart.dev)
+
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)### *A Minimalist, Feature-Rich Clock App for Android*## ✨ Features
+
+[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android)](https://www.android.com)
+
+
+
+**A minimalist, feature-rich clock app for Android**
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.24.5-02569B?logo=flutter)](https://flutter.dev)### 🏠 Clock Screen
 
+✨ Stunning watch faces • ⏱️ Powerful timers • 🔔 Smart alarms • 🎨 Fully customizable
+
 [![Dart](https://img.shields.io/badge/Dart-3.5.4-0175C2?logo=dart)](https://dart.dev)- **Digital Clock Display** - Large neon-style digital clock with seconds
+
+[📥 Download APK](../../releases) • [🐛 Report Bug](../../issues) • [💡 Request Feature](../../issues)
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)- **Auto Timezone Detection** - Automatically detects and uses device timezone
 
+---
+
 [![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android)](https://www.android.com)- **Dhaka Timezone** - Option to switch to Dhaka, Bangladesh (Asia/Dhaka, UTC+6)
+
+### Key Features at a Glance
 
 - **Date Display** - Shows current date in readable format
 
-*Your all-in-one time management companion with stunning watch faces, powerful timers, smart alarms, and customizable aesthetics.*- **Timezone Information** - Displays timezone name and offset
+🎨 **5 Beautiful Watch Faces** • 🔄 **Dual Countdown Modes** • ⏲️ **Professional Stopwatch**  
+
+🔔 **Unlimited Alarms** • 📝 **Smart Reminders** • 🌈 **36+ Colors + RGB Picker**  *Your all-in-one time management companion with stunning watch faces, powerful timers, smart alarms, and customizable aesthetics.*- **Timezone Information** - Displays timezone name and offset
+
+📱 **Portrait & Landscape** • 🌙 **Dark Theme Optimized** • ⚡ **Smooth Animations**
 
 
+
+</div>
 
 [Download APK](../../releases) • [Report Bug](../../issues) • [Request Feature](../../issues)### ⏱️ Timer Screen
 
+---
+
 - **Countdown Timer** - Set custom countdown timers
+
+## 📸 Screenshots
 
 </div>- **Stopwatch** - Full stopwatch functionality
 
-- **Quick Timer Presets** - 1, 5, 10, 15, 30 minutes, and 1 hour quick buttons
+<table>
 
----- **Custom Time Setting** - Set hours, minutes, and seconds manually
+  <tr>- **Quick Timer Presets** - 1, 5, 10, 15, 30 minutes, and 1 hour quick buttons
 
-- **Progress Bar** - Visual countdown progress indicator
+    <td colspan="4" align="center"><b>🎬 Onboarding Experience</b></td>
 
-## 📸 Screenshots- **Play/Pause/Reset Controls** - Full timer control
+  </tr>---- **Custom Time Setting** - Set hours, minutes, and seconds manually
 
+  <tr>
 
+    <td><img src="docs/screenshots/onboarding/onboarding1.png" width="200"/></td>- **Progress Bar** - Visual countdown progress indicator
+
+    <td><img src="docs/screenshots/onboarding/onboarding2.png" width="200"/></td>
+
+    <td><img src="docs/screenshots/onboarding/onboarding3.png" width="200"/></td>## 📸 Screenshots- **Play/Pause/Reset Controls** - Full timer control
+
+    <td><img src="docs/screenshots/onboarding/onboarding4.png" width="200"/></td>
+
+  </tr>
+
+</table>
 
 <div align="center">### 🎨 Design
 
-- **Dark Neon Minimalism** - Clean, professional design with neon glow effects
+<table>
 
-### 🎬 Onboarding Experience- **Landscape Mode Only** - Optimized for horizontal viewing
+  <tr>- **Dark Neon Minimalism** - Clean, professional design with neon glow effects
 
-<p float="left">- **Always-On Display** - Screen stays awake while app is active
+    <td colspan="2" align="center"><b>🏠 Home & Settings</b></td>
 
-  <img src="docs/screenshots/onboarding/onboarding1.png" width="200" />- **Smooth Animations** - Beautiful transitions and effects
+    <td colspan="2" align="center"><b>⏱️ Timer & Stopwatch</b></td>### 🎬 Onboarding Experience- **Landscape Mode Only** - Optimized for horizontal viewing
 
-  <img src="docs/screenshots/onboarding/onboarding2.png" width="200" />- **Responsive Design** - Adapts to different screen sizes
+  </tr>
 
-  <img src="docs/screenshots/onboarding/onboarding3.png" width="200" />
+  <tr><p float="left">- **Always-On Display** - Screen stays awake while app is active
 
-  <img src="docs/screenshots/onboarding/onboarding4.png" width="200" />## 📦 Packages Used
+    <td><img src="docs/screenshots/home/homePage.png" width="200"/></td>
 
-</p>
+    <td><img src="docs/screenshots/settings/settings.png" width="200"/></td>  <img src="docs/screenshots/onboarding/onboarding1.png" width="200" />- **Smooth Animations** - Beautiful transitions and effects
 
-| Package | Purpose |
+    <td><img src="docs/screenshots/timer/timer1.png" width="200"/></td>
 
-### 🏠 Home & Navigation|---------|---------|
+    <td><img src="docs/screenshots/stopwatch/stopwatch.png" width="200"/></td>  <img src="docs/screenshots/onboarding/onboarding2.png" width="200" />- **Responsive Design** - Adapts to different screen sizes
 
-<p float="left">| `provider` | Lightweight state management |
+  </tr>
 
-  <img src="docs/screenshots/home/homePage.png" width="200" />| `wakelock_plus` | Keep screen awake while app is active |
+</table>  <img src="docs/screenshots/onboarding/onboarding3.png" width="200" />
 
-  <img src="docs/screenshots/settings/settings.png" width="200" />| `flutter_animate` | Smooth animations for digits |
 
-</p>| `intl` | Timezone + date formatting |
 
-| `flutter_screenutil` | Responsive design for different resolutions |
+<table>  <img src="docs/screenshots/onboarding/onboarding4.png" width="200" />## 📦 Packages Used
 
-### 🕐 Beautiful Watch Faces| `google_fonts` | Digital-style typography (Orbitron & Roboto Mono) |
+  <tr>
 
-<p float="left">| `shared_preferences` | Save user settings |
+    <td colspan="4" align="center"><b>🕐 Watch Faces</b></td></p>
 
-  <img src="docs/screenshots/clock/clock1.png" width="200" />
+  </tr>
 
-  <img src="docs/screenshots/clock/clock2.png" width="200" />## 🏗️ Architecture
+  <tr>| Package | Purpose |
 
-  <img src="docs/screenshots/clock/clock3.png" width="200" />
+    <td><img src="docs/screenshots/clock/clock1.png" width="200"/></td>
 
-  <img src="docs/screenshots/clock/clock4.png" width="200" />**Pattern:** Provider + MVVM (Model–View–ViewModel)
+    <td><img src="docs/screenshots/clock/clock2.png" width="200"/></td>### 🏠 Home & Navigation|---------|---------|
 
-</p>
+    <td><img src="docs/screenshots/clock/clock3.png" width="200"/></td>
 
-### Folder Structure
+    <td><img src="docs/screenshots/clock/clock4.png" width="200"/></td><p float="left">| `provider` | Lightweight state management |
 
-### ⏱️ Timer & Stopwatch
+  </tr>
 
-<p float="left">```
+</table>  <img src="docs/screenshots/home/homePage.png" width="200" />| `wakelock_plus` | Keep screen awake while app is active |
 
-  <img src="docs/screenshots/timer/timer1.png" width="200" />lib/
 
-  <img src="docs/screenshots/timer/timer2.png" width="200" />├── main.dart                          # App entry point
 
-  <img src="docs/screenshots/timer/timer3.png" width="200" />├── core/
+<table>  <img src="docs/screenshots/settings/settings.png" width="200" />| `flutter_animate` | Smooth animations for digits |
 
-  <img src="docs/screenshots/stopwatch/stopwatch.png" width="200" />│   ├── constants/
+  <tr>
 
-</p>│   │   ├── app_colors.dart           # Color palette
+    <td colspan="4" align="center"><b>🔔 Alarms</b></td></p>| `intl` | Timezone + date formatting |
+
+  </tr>
+
+  <tr>| `flutter_screenutil` | Responsive design for different resolutions |
+
+    <td><img src="docs/screenshots/alarm/alarm.png" width="200"/></td>
+
+    <td><img src="docs/screenshots/alarm/alarm2.png" width="200"/></td>### 🕐 Beautiful Watch Faces| `google_fonts` | Digital-style typography (Orbitron & Roboto Mono) |
+
+    <td><img src="docs/screenshots/alarm/alarm3.png" width="200"/></td>
+
+    <td><img src="docs/screenshots/alarm/alarm4.png" width="200"/></td><p float="left">| `shared_preferences` | Save user settings |
+
+  </tr>
+
+</table>  <img src="docs/screenshots/clock/clock1.png" width="200" />
+
+
+
+<table>  <img src="docs/screenshots/clock/clock2.png" width="200" />## 🏗️ Architecture
+
+  <tr>
+
+    <td colspan="4" align="center"><b>📝 Reminders</b></td>  <img src="docs/screenshots/clock/clock3.png" width="200" />
+
+  </tr>
+
+  <tr>  <img src="docs/screenshots/clock/clock4.png" width="200" />**Pattern:** Provider + MVVM (Model–View–ViewModel)
+
+    <td><img src="docs/screenshots/reminder/remainder1.png" width="200"/></td>
+
+    <td><img src="docs/screenshots/reminder/remainder2.png" width="200"/></td></p>
+
+    <td><img src="docs/screenshots/reminder/remainder3.png" width="200"/></td>
+
+    <td><img src="docs/screenshots/reminder/remainder4.png" width="200"/></td>### Folder Structure
+
+  </tr>
+
+</table>### ⏱️ Timer & Stopwatch
+
+
+
+<table><p float="left">```
+
+  <tr>
+
+    <td colspan="2" align="center"><b>⏱️ Timer Features</b></td>  <img src="docs/screenshots/timer/timer1.png" width="200" />lib/
+
+    <td colspan="2" align="center"><b>🔔 Alarm Features</b></td>
+
+  </tr>  <img src="docs/screenshots/timer/timer2.png" width="200" />├── main.dart                          # App entry point
+
+  <tr>
+
+    <td><img src="docs/screenshots/timer/timer2.png" width="200"/></td>  <img src="docs/screenshots/timer/timer3.png" width="200" />├── core/
+
+    <td><img src="docs/screenshots/timer/timer3.png" width="200"/></td>
+
+    <td><img src="docs/screenshots/alarm/alarm5.png" width="200"/></td>  <img src="docs/screenshots/stopwatch/stopwatch.png" width="200" />│   ├── constants/
+
+    <td><img src="docs/screenshots/reminder/remainder5.png" width="200"/></td>
+
+  </tr></p>│   │   ├── app_colors.dart           # Color palette
+
+</table>
 
 │   │   ├── app_text_styles.dart      # Typography styles
 
+---
+
 ### 🔔 Alarms & Reminders│   │   └── app_themes.dart           # App theme
+
+## ✨ Features
 
 <p float="left">│   └── utils/
 
-  <img src="docs/screenshots/alarm/alarm.png" width="200" />│       ├── time_utils.dart           # Time formatting utilities
+### ⏰ Clock
 
-  <img src="docs/screenshots/alarm/alarm2.png" width="200" />│       └── screen_utils.dart         # Screen responsiveness utils
-
-  <img src="docs/screenshots/alarm/alarm3.png" width="200" />├── data/
-
-  <img src="docs/screenshots/alarm/alarm4.png" width="200" />│   ├── models/
-
-</p>│   │   └── clock_model.dart          # Clock data model
-
-│   └── services/
-
-### 📝 Smart Reminders│       ├── timezone_service.dart     # Timezone management
-
-<p float="left">│       └── wakelock_service.dart     # Screen wakelock service
-
-  <img src="docs/screenshots/reminder/remainder1.png" width="200" />├── state/
-
-  <img src="docs/screenshots/reminder/remainder2.png" width="200" />│   ├── clock_provider.dart           # Clock state management
-
-  <img src="docs/screenshots/reminder/remainder3.png" width="200" />│   └── timer_provider.dart           # Timer state management
-
-  <img src="docs/screenshots/reminder/remainder4.png" width="200" />└── presentation/
-
-</p>    ├── screens/
-
-    │   ├── home_screen.dart          # Clock screen
-
-</div>    │   └── timer_screen.dart         # Timer screen
-
-    └── widgets/
-
----        ├── digital_clock.dart        # Digital clock widget
-
-        ├── timer_display.dart        # Timer display widget
-
-## ✨ Features        └── app_button.dart           # Reusable button widget
-
-```
-
-### ⏰ **Clock**
-
-- 🎨 **5 Stunning Watch Faces**## 🚀 Getting Started
+- **5 Stunning Watch Faces**  <img src="docs/screenshots/alarm/alarm.png" width="200" />│       ├── time_utils.dart           # Time formatting utilities
 
   - Default LED Digital Clock
 
-  - Large Display Clock### Prerequisites
+  - Large Display Clock  <img src="docs/screenshots/alarm/alarm2.png" width="200" />│       └── screen_utils.dart         # Screen responsiveness utils
 
-  - Seven-Segment Display- Flutter SDK (>=3.9.2)
+  - Seven-Segment Display
 
-  - Rounded Corners Design- Android Studio / VS Code
+  - Rounded Corners Design  <img src="docs/screenshots/alarm/alarm3.png" width="200" />├── data/
 
-  - Mechanical Flip Clock- Android/iOS device or emulator
+  - Mechanical Flip Clock
 
-- 🔄 **Swipe** left/right to change clock faces
+- **Swipe** left/right to change faces  <img src="docs/screenshots/alarm/alarm4.png" width="200" />│   ├── models/
 
-- 🎯 **Double-tap** to change colors instantly### Installation
+- **Double-tap** to change colors
 
-- 📱 **Portrait & Landscape** support
+- **Portrait & Landscape** support</p>│   │   └── clock_model.dart          # Clock data model
 
-- 🌙 **Fullscreen mode** for distraction-free viewing1. Clone the repository:
+- **Fullscreen mode** available
 
-- ⚡ **Smooth animations** with flip effects```bash
+- **Smooth flip animations**│   └── services/
 
-git clone <repository-url>
 
-### ⏱️ **Timer**cd focus_clock
 
-- 🔄 **Dual Countdown Modes**```
+### ⏱️ Timer### 📝 Smart Reminders│       ├── timezone_service.dart     # Timezone management
 
-  - **Reverse Countdown**: Traditional 60→0 seconds
+- **Dual Countdown Modes**
 
-  - **Forward Countdown**: Modern 0→60 seconds2. Install dependencies:
+  - Reverse: 60→0 (traditional)<p float="left">│       └── wakelock_service.dart     # Screen wakelock service
 
-- ⭕ **Circular Progress** indicator with visual feedback```bash
+  - Forward: 0→60 (modern)
 
-- ⚡ **Quick Adjust** buttons (-10s, +30s)flutter pub get
+- **Circular progress** indicator  <img src="docs/screenshots/reminder/remainder1.png" width="200" />├── state/
 
-- 🎯 **Quick Presets**: 5, 10, 15, 20, 25, 30, 45, 60 minutes```
+- **Quick presets**: 5, 10, 15, 20, 25, 30, 45, 60 min
 
-- 🎛️ **Custom Time Picker** (minutes & seconds)
+- **Custom time** picker  <img src="docs/screenshots/reminder/remainder2.png" width="200" />│   ├── clock_provider.dart           # Clock state management
 
-- 🔊 **Sound & Vibration** alerts3. Run the app:
+- **Quick adjust**: -10s, +30s buttons
 
-- 📱 **Portrait**: Circular UI with large buttons```bash
+- **Sound & vibration** alerts  <img src="docs/screenshots/reminder/remainder3.png" width="200" />│   └── timer_provider.dart           # Timer state management
 
-- 💻 **Landscape**: Large digit displayflutter run
+- **Portrait** circular UI
 
-- ⏸️ **Pause/Resume** functionality```
+- **Landscape** large digits  <img src="docs/screenshots/reminder/remainder4.png" width="200" />└── presentation/
 
-- 🔄 **5-min Snooze** option
+- **Pause/Resume** & **Snooze** (5 min)
 
-## 🎨 Color Palette
+</p>    ├── screens/
 
-### ⏲️ **Stopwatch**
+### ⏲️ Stopwatch
 
-- 🎯 **Professional Design** with circular progress| Purpose | Color | Code |
+- **Millisecond precision** tracking    │   ├── home_screen.dart          # Clock screen
 
-- ✨ **Animated pulse & glow** effects|---------|-------|------|
+- **Animated pulse** & glow effects
 
-- ⚡ **Precise millisecond** tracking| Background | Deep black | `#0a0a0a` |
+- **Circular progress** ring</div>    │   └── timer_screen.dart         # Timer screen
 
-- 📊 **Split times** support| Primary Neon | Electric mint | `#00FFB0` |
+- **Split times** support
 
-- 🎨 **Modern gradient** buttons| Accent Neon | Cyan glow | `#00BFFF` |
+- **Modern gradient** buttons    └── widgets/
 
-- 🔄 **Smooth animations** throughout| Secondary Text | Muted gray | `#A0A0A0` |
+- **Smooth animations**
 
-| Timer Active | Alert red | `#FF4B4B` |
+---        ├── digital_clock.dart        # Digital clock widget
 
-### 🔔 **Alarms**
+### 🔔 Alarms
 
-- ➕ **Unlimited alarms** with custom labels## 📱 Usage
+- **Unlimited alarms** with labels        ├── timer_display.dart        # Timer display widget
 
-- 📅 **Repeat days** (Mon-Sun selection)
+- **Repeat days** (Mon-Sun)
 
-- 💤 **Snooze** functionality (10 minutes)### Clock Screen
+- **iOS-style toggle** switch## ✨ Features        └── app_button.dart           # Reusable button widget
 
-- 📳 **Vibration** support1. View the current time with neon glow effect
+- **Snooze** (10 minutes)
 
-- 🎵 **Multiple ringtones** to choose from2. Tap "Switch Timezone" to change between auto-detect and Dhaka timezone
+- **Vibration** support```
 
-- 🎚️ **iOS-style ON/OFF toggle** switch3. Date and timezone information displayed below the clock
+- **Multiple ringtones**
 
-- 🗑️ **Auto-delete** after alarm goes off (optional)
+- **Auto-delete** option### ⏰ **Clock**
 
-- ⏰ **Beautiful alarm dialog** with gradient background### Timer Screen
+- **Gradient alarm dialog**
 
-1. Toggle between Countdown Timer and Stopwatch modes
+- 🎨 **5 Stunning Watch Faces**## 🚀 Getting Started
 
-### 📝 **Reminders**2. For Countdown:
+### 📝 Reminders
 
-- 📅 **Date & Time** based reminders   - Use quick preset buttons (1, 5, 10, 15, 30 min, 1 hour)
+- **Date & time** based  - Default LED Digital Clock
 
-- ⏳ **Live countdown** timer display   - Or tap "Set Time" for custom duration
+- **Live countdown** display
 
-- 🔊 **Sound & Vibration** alerts3. Tap "Start" to begin, "Pause" to pause, "Reset" to reset
+- **Sound & vibration**  - Large Display Clock### Prerequisites
 
-- 🔔 **Persistent notifications**4. Progress bar shows countdown completion percentage
+- **Persistent notifications**
 
-- 🗑️ **Swipe-to-delete** functionality
+- **Swipe-to-delete**  - Seven-Segment Display- Flutter SDK (>=3.9.2)
 
-- 📝 **Custom descriptions** for each reminder## 🔧 Configuration
+- **Custom descriptions**
 
-- ⚡ **Instant notifications** at set time
+- **Instant alerts**  - Rounded Corners Design- Android Studio / VS Code
 
-The app automatically:
 
-### 🎨 **Customization**- Locks to landscape orientation
 
-- 🌈 **36+ Preset Colors**- Enables screen wakelock when app is active
+### 🎨 Customization  - Mechanical Flip Clock- Android/iOS device or emulator
 
-  - Carefully curated color palette- Disables wakelock when app is paused/closed
+- **36+ preset colors**
 
-  - Vibrant neon colors- Saves timezone preference locally
-
-  - Professional themes
-
-- 🎨 **Custom RGB Color Picker**## 📄 License
+- **Custom RGB picker**- 🔄 **Swipe** left/right to change clock faces
 
   - Interactive color wheel
 
-  - Real-time previewThis project is open source and available under the MIT License.
+  - Real-time preview- 🎯 **Double-tap** to change colors instantly### Installation
 
-  - HEX code display (#RRGGBB)
+  - HEX code display
 
-  - RGB sliders (0-255)## 🤝 Contributing
+  - RGB sliders (0-255)- 📱 **Portrait & Landscape** support
 
-- 🔆 **Brightness Control** (10%-100%)
+- **Brightness control** (10%-100%)
 
-- 🎯 **Consistent color** across all featuresContributions, issues, and feature requests are welcome!
+- **Dark theme** optimized- 🌙 **Fullscreen mode** for distraction-free viewing1. Clone the repository:
 
-- 🌙 **Dark theme** optimized
+- **Consistent** across features
 
-## 👨‍💻 Author
+- ⚡ **Smooth animations** with flip effects```bash
 
-### 📊 **Analytics & More**
+### 📊 More Features
 
-- 📈 **Firebase Analytics** integrationBuilt with ❤️ using Flutter
+- **Firebase Analytics**git clone <repository-url>
 
-- 📱 **Track app usage** & engagement
+- **Onboarding tutorial** (first launch)
 
-- 🎬 **Onboarding tutorial** (first launch only)---
+- **Settings persistence**### ⏱️ **Timer**cd focus_clock
 
-- 💾 **Settings persistence** with SharedPreferences
+- **Optimized performance**
 
-- ⚡ **Optimized performance** & battery usage**Enjoy your Focus Clock! 🕒✨**
+- **52 MB APK** size- 🔄 **Dual Countdown Modes**```
 
+
+
+---  - **Reverse Countdown**: Traditional 60→0 seconds
+
+
+
+## 🚀 Installation  - **Forward Countdown**: Modern 0→60 seconds2. Install dependencies:
+
+
+
+### Download APK- ⭕ **Circular Progress** indicator with visual feedback```bash
+
+
+
+1. Go to [**Releases**](../../releases)- ⚡ **Quick Adjust** buttons (-10s, +30s)flutter pub get
+
+2. Download **`Focus Clock.apk`**
+
+3. Enable "Install from Unknown Sources"- 🎯 **Quick Presets**: 5, 10, 15, 20, 25, 30, 45, 60 minutes```
+
+4. Install and enjoy!
+
+- 🎛️ **Custom Time Picker** (minutes & seconds)
+
+### Build from Source
+
+- 🔊 **Sound & Vibration** alerts3. Run the app:
+
+```bash
+
+git clone https://github.com/mehedi-hridoy/FocusClock.git- 📱 **Portrait**: Circular UI with large buttons```bash
+
+cd FocusClock
+
+flutter pub get- 💻 **Landscape**: Large digit displayflutter run
+
+flutter run
+
+```- ⏸️ **Pause/Resume** functionality```
+
+
+
+---- 🔄 **5-min Snooze** option
+
+
+
+## 🎮 Usage Guide## 🎨 Color Palette
+
+
+
+### ⏰ Clock### ⏲️ **Stopwatch**
+
+- **Change face**: Swipe left/right
+
+- **Change color**: Double-tap- 🎯 **Professional Design** with circular progress| Purpose | Color | Code |
+
+- **Fullscreen**: Tap screen
+
+- **Settings**: Long-press- ✨ **Animated pulse & glow** effects|---------|-------|------|
+
+
+
+### ⏱️ Timer- ⚡ **Precise millisecond** tracking| Background | Deep black | `#0a0a0a` |
+
+1. Double-tap to open settings
+
+2. Choose preset or set custom time- 📊 **Split times** support| Primary Neon | Electric mint | `#00FFB0` |
+
+3. Toggle countdown direction (↓/↑)
+
+4. Tap play to start- 🎨 **Modern gradient** buttons| Accent Neon | Cyan glow | `#00BFFF` |
+
+5. Swipe to adjust time
+
+- 🔄 **Smooth animations** throughout| Secondary Text | Muted gray | `#A0A0A0` |
+
+### ⏲️ Stopwatch
+
+- **Start**: Tap play| Timer Active | Alert red | `#FF4B4B` |
+
+- **Pause**: Tap pause
+
+- **Reset**: Tap reset### 🔔 **Alarms**
+
+- **Color**: Swipe up/down
+
+- ➕ **Unlimited alarms** with custom labels## 📱 Usage
+
+### 🔔 Alarms
+
+1. Tap **+** to add alarm- 📅 **Repeat days** (Mon-Sun selection)
+
+2. Set time & repeat days
+
+3. Add label & options- 💤 **Snooze** functionality (10 minutes)### Clock Screen
+
+4. Toggle ON/OFF switch
+
+5. Delete with swipe- 📳 **Vibration** support1. View the current time with neon glow effect
+
+
+
+### 📝 Reminders- 🎵 **Multiple ringtones** to choose from2. Tap "Switch Timezone" to change between auto-detect and Dhaka timezone
+
+1. Tap **+** to add
+
+2. Set date & time- 🎚️ **iOS-style ON/OFF toggle** switch3. Date and timezone information displayed below the clock
+
+3. Add description
+
+4. View countdown- 🗑️ **Auto-delete** after alarm goes off (optional)
+
+5. Swipe to delete
+
+- ⏰ **Beautiful alarm dialog** with gradient background### Timer Screen
 
 ---
 
-## 🎯 Key Highlights
-
-| Feature | Description |
-|---------|-------------|
-| 🎨 **Beautiful UI** | Minimalist dark theme with neon accents and smooth animations |
-| ⚡ **Fast & Lightweight** | Optimized performance with 52 MB APK size |
-| 🎯 **User-Friendly** | Intuitive gestures (swipe, double-tap, long-press) |
-| 🔔 **Smart Notifications** | Never miss alarms or reminders |
-| 🎨 **Fully Customizable** | 36+ colors + custom RGB picker |
-| 📱 **Adaptive Layout** | Portrait & landscape support |
-| 🌙 **Dark Mode** | Easy on the eyes, perfect for night use |
-| 🔄 **Smooth Animations** | Delightful transitions throughout |
-
----
+1. Toggle between Countdown Timer and Stopwatch modes
 
 ## 📱 System Requirements
 
+### 📝 **Reminders**2. For Countdown:
+
 | Requirement | Details |
+
+|------------|---------|- 📅 **Date & Time** based reminders   - Use quick preset buttons (1, 5, 10, 15, 30 min, 1 hour)
+
+| **Platform** | Android 5.0+ (API 21) |
+
+| **Storage** | ~52 MB |- ⏳ **Live countdown** timer display   - Or tap "Set Time" for custom duration
+
+| **Permissions** | Notifications, Exact Alarms, Vibration |
+
+| **Internet** | Optional (for analytics) |- 🔊 **Sound & Vibration** alerts3. Tap "Start" to begin, "Pause" to pause, "Reset" to reset
+
+
+
+---- 🔔 **Persistent notifications**4. Progress bar shows countdown completion percentage
+
+
+
+## 🛠️ Tech Stack- 🗑️ **Swipe-to-delete** functionality
+
+
+
+**Framework:** Flutter 3.24.5 | **Language:** Dart 3.5.4  - 📝 **Custom descriptions** for each reminder## 🔧 Configuration
+
+**State Management:** Provider | **Storage:** SharedPreferences  
+
+**Notifications:** flutter_local_notifications | **Analytics:** Firebase- ⚡ **Instant notifications** at set time
+
+
+
+### Key DependenciesThe app automatically:
+
+```yaml
+
+provider: ^6.1.2### 🎨 **Customization**- Locks to landscape orientation
+
+google_fonts: ^6.2.1
+
+shared_preferences: ^2.3.5- 🌈 **36+ Preset Colors**- Enables screen wakelock when app is active
+
+flutter_local_notifications: ^17.2.3
+
+firebase_analytics: ^11.6.0  - Carefully curated color palette- Disables wakelock when app is paused/closed
+
+intl: ^0.19.0
+
+permission_handler: ^11.3.1  - Vibrant neon colors- Saves timezone preference locally
+
+flutter_ringtone_player: ^4.0.0+4
+
+vibration: ^2.1.0  - Professional themes
+
+```
+
+- 🎨 **Custom RGB Color Picker**## 📄 License
+
+---
+
+  - Interactive color wheel
+
+## 🏗️ Architecture
+
+  - Real-time previewThis project is open source and available under the MIT License.
+
+```
+
+lib/  - HEX code display (#RRGGBB)
+
+├── core/               # Constants, services, utilities
+
+│   ├── constants/      # Colors, themes  - RGB sliders (0-255)## 🤝 Contributing
+
+│   ├── services/       # Alarm, notification, Firebase
+
+│   └── utils/          # Time formatting- 🔆 **Brightness Control** (10%-100%)
+
+├── data/               # Models
+
+│   └── models/         # Alarm, Reminder models- 🎯 **Consistent color** across all featuresContributions, issues, and feature requests are welcome!
+
+├── state/              # Provider state management
+
+│   ├── settings_provider.dart- 🌙 **Dark theme** optimized
+
+│   ├── timer_provider.dart
+
+│   ├── alarm_provider.dart## 👨‍💻 Author
+
+│   └── reminder_provider.dart
+
+└── presentation/       # UI### 📊 **Analytics & More**
+
+    ├── screens/        # All screens
+
+    └── widgets/        # Reusable widgets- 📈 **Firebase Analytics** integrationBuilt with ❤️ using Flutter
+
+```
+
+- 📱 **Track app usage** & engagement
+
+---
+
+- 🎬 **Onboarding tutorial** (first launch only)---
+
+## 🗺️ Roadmap
+
+- 💾 **Settings persistence** with SharedPreferences
+
+- [ ] iOS Support
+
+- [ ] Home screen widgets- ⚡ **Optimized performance** & battery usage**Enjoy your Focus Clock! 🕒✨**
+
+- [ ] World clock
+
+- [ ] Pomodoro timer
+
+- [ ] Light theme---
+
+- [ ] Cloud backup
+
+- [ ] More watch faces## 🎯 Key Highlights
+
+- [ ] Alarm challenges
+
+- [ ] Sleep timer| Feature | Description |
+
+- [ ] Usage statistics|---------|-------------|
+
+| 🎨 **Beautiful UI** | Minimalist dark theme with neon accents and smooth animations |
+
+---| ⚡ **Fast & Lightweight** | Optimized performance with 52 MB APK size |
+
+| 🎯 **User-Friendly** | Intuitive gestures (swipe, double-tap, long-press) |
+
+## 🤝 Contributing| 🔔 **Smart Notifications** | Never miss alarms or reminders |
+
+| 🎨 **Fully Customizable** | 36+ colors + custom RGB picker |
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.| 📱 **Adaptive Layout** | Portrait & landscape support |
+
+| 🌙 **Dark Mode** | Easy on the eyes, perfect for night use |
+
+1. Fork the repository| 🔄 **Smooth Animations** | Delightful transitions throughout |
+
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)---
+
+4. Push to branch (`git push origin feature/AmazingFeature`)
+
+5. Open Pull Request## 📱 System Requirements
+
+
+
+---| Requirement | Details |
+
 |------------|---------|
-| **Platform** | Android |
+
+## 📄 License| **Platform** | Android |
+
 | **Minimum Version** | Android 5.0 (API 21) |
-| **Recommended** | Android 8.0+ (API 26+) |
+
+MIT License - see [LICENSE](LICENSE) file for details.| **Recommended** | Android 8.0+ (API 26+) |
+
 | **Permissions** | • Notifications<br>• Exact Alarms<br>• Vibration |
-| **Storage** | ~52 MB |
+
+Copyright © 2025 Mehedi Hasan Hridoy| **Storage** | ~52 MB |
+
 | **Internet** | Optional (for Firebase Analytics) |
 
 ---
 
+---
+
+## 👨‍💻 Author
+
 ## 🚀 Installation
 
-### Option 1: Download APK (Recommended)
+**Mehedi Hasan Hridoy**  
+
+GitHub: [@mehedi-hridoy](https://github.com/mehedi-hridoy)### Option 1: Download APK (Recommended)
+
 1. Go to [Releases](../../releases)
-2. Download the latest `Focus Clock.apk`
+
+---2. Download the latest `Focus Clock.apk`
+
 3. Enable "Install from Unknown Sources" in Settings
-4. Tap the APK file to install
+
+## 🙏 Acknowledgments4. Tap the APK file to install
+
 5. Open Focus Clock and enjoy!
 
-### Option 2: Build from Source
+- Flutter Team
 
-```bash
-# 1. Clone the repository
+- Firebase### Option 2: Build from Source
+
+- Google Fonts
+
+- Material Design```bash
+
+- Open Source Community# 1. Clone the repository
+
 git clone https://github.com/mehedi-hridoy/FocusClock.git
-cd FocusClock
 
-# 2. Install dependencies
+---cd FocusClock
+
+
+
+<div align="center"># 2. Install dependencies
+
 flutter pub get
 
-# 3. Run on connected device/emulator
-flutter run
+**Made with ❤️ using Flutter**
 
-# 4. Build release APK
+# 3. Run on connected device/emulator
+
+[Download](../../releases) • [Documentation](../../) • [Issues](../../issues)flutter run
+
+
+
+*© 2025 Mehedi Hasan Hridoy*# 4. Build release APK
+
 flutter build apk --release
-```
+
+</div>```
+
 
 ---
 
