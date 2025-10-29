@@ -120,7 +120,13 @@ class _FullscreenTimerScreenState extends State<FullscreenTimerScreen>
 
   Duration _getRemainingTime(TimerProvider timerProvider) {
     if (timerProvider.isCountdown) {
-      return timerProvider.duration - timerProvider.elapsed;
+      if (timerProvider.isReverseCountdown) {
+        // Reverse countdown: show remaining time (60->0)
+        return timerProvider.duration - timerProvider.elapsed;
+      } else {
+        // Forward countdown: show elapsed time (0->60)
+        return timerProvider.elapsed;
+      }
     }
     return timerProvider.elapsed;
   }
@@ -790,6 +796,205 @@ class _FullscreenTimerScreenState extends State<FullscreenTimerScreen>
                                                 ),
                                               ),
                                             ],
+                                          ),
+                                          const SizedBox(height: 28),
+
+                                          // Countdown Direction Toggle
+                                          Container(
+                                            padding: const EdgeInsets.all(14),
+                                            decoration: BoxDecoration(
+                                              color: displayColor.withOpacity(
+                                                0.08,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(12),
+                                              border: Border.all(
+                                                color: displayColor.withOpacity(
+                                                  0.3,
+                                                ),
+                                                width: 1.5,
+                                              ),
+                                            ),
+                                            child: Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
+                                              children: [
+                                                Expanded(
+                                                  child: Column(
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .start,
+                                                    children: [
+                                                      Text(
+                                                        'COUNTDOWN DIRECTION',
+                                                        style:
+                                                            GoogleFonts.comfortaa(
+                                                              fontSize: 11,
+                                                              color: displayColor
+                                                                  .withOpacity(
+                                                                    0.8,
+                                                                  ),
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w600,
+                                                              letterSpacing:
+                                                                  1.2,
+                                                            ),
+                                                      ),
+                                                      const SizedBox(height: 4),
+                                                      Text(
+                                                        timerProvider
+                                                                .isReverseCountdown
+                                                            ? 'Reverse (60 → 0)'
+                                                            : 'Forward (0 → 60)',
+                                                        style:
+                                                            GoogleFonts.comfortaa(
+                                                              fontSize: 10,
+                                                              color: displayColor
+                                                                  .withOpacity(
+                                                                    0.5,
+                                                                  ),
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                            ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                const SizedBox(width: 10),
+                                                GestureDetector(
+                                                  onTap: () {
+                                                    timerProvider
+                                                        .toggleCountdownDirection();
+                                                  },
+                                                  child: AnimatedContainer(
+                                                    duration: const Duration(
+                                                      milliseconds: 300,
+                                                    ),
+                                                    width: 70,
+                                                    height: 36,
+                                                    decoration: BoxDecoration(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                            20,
+                                                          ),
+                                                      color:
+                                                          timerProvider
+                                                              .isReverseCountdown
+                                                          ? displayColor
+                                                          : Colors.grey[800],
+                                                      border: Border.all(
+                                                        color:
+                                                            timerProvider
+                                                                .isReverseCountdown
+                                                            ? displayColor
+                                                            : Colors.grey[600]!,
+                                                        width: 2,
+                                                      ),
+                                                    ),
+                                                    child: Stack(
+                                                      children: [
+                                                        // Background text indicators
+                                                        Positioned.fill(
+                                                          child: Padding(
+                                                            padding:
+                                                                const EdgeInsets.symmetric(
+                                                                  horizontal: 8,
+                                                                ),
+                                                            child: Row(
+                                                              mainAxisAlignment:
+                                                                  MainAxisAlignment
+                                                                      .spaceBetween,
+                                                              children: [
+                                                                Text(
+                                                                  '↓',
+                                                                  style: GoogleFonts.comfortaa(
+                                                                    fontSize:
+                                                                        14,
+                                                                    color:
+                                                                        timerProvider
+                                                                            .isReverseCountdown
+                                                                        ? Colors
+                                                                              .black
+                                                                        : Colors
+                                                                              .grey[600],
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w900,
+                                                                  ),
+                                                                ),
+                                                                Text(
+                                                                  '↑',
+                                                                  style: GoogleFonts.comfortaa(
+                                                                    fontSize:
+                                                                        14,
+                                                                    color:
+                                                                        !timerProvider
+                                                                            .isReverseCountdown
+                                                                        ? Colors
+                                                                              .white
+                                                                        : Colors
+                                                                              .grey[600],
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w900,
+                                                                  ),
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        // Sliding white knob
+                                                        AnimatedAlign(
+                                                          duration:
+                                                              const Duration(
+                                                                milliseconds:
+                                                                    300,
+                                                              ),
+                                                          curve:
+                                                              Curves.easeInOut,
+                                                          alignment:
+                                                              timerProvider
+                                                                  .isReverseCountdown
+                                                              ? Alignment
+                                                                    .centerLeft
+                                                              : Alignment
+                                                                    .centerRight,
+                                                          child: Container(
+                                                            width: 30,
+                                                            height: 30,
+                                                            margin:
+                                                                const EdgeInsets.all(
+                                                                  3,
+                                                                ),
+                                                            decoration: BoxDecoration(
+                                                              shape: BoxShape
+                                                                  .circle,
+                                                              color:
+                                                                  Colors.white,
+                                                              boxShadow: [
+                                                                BoxShadow(
+                                                                  color: Colors
+                                                                      .black
+                                                                      .withOpacity(
+                                                                        0.2,
+                                                                      ),
+                                                                  blurRadius: 4,
+                                                                  spreadRadius:
+                                                                      1,
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
                                           ),
                                           const SizedBox(height: 28),
 

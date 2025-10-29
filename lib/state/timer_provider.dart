@@ -16,6 +16,8 @@ class TimerProvider extends ChangeNotifier {
   TimerMode _mode = TimerMode.countdown;
   bool _isRunning = false;
   bool _isPaused = false;
+  bool _isReverseCountdown =
+      true; // true = count down (60->0), false = count up (0->60)
   final AlarmService _alarmService = AlarmService();
 
   // Getters
@@ -26,6 +28,7 @@ class TimerProvider extends ChangeNotifier {
   bool get isPaused => _isPaused;
   bool get isCountdown => _mode == TimerMode.countdown;
   bool get isStopwatch => _mode == TimerMode.stopwatch;
+  bool get isReverseCountdown => _isReverseCountdown;
 
   /// Get formatted time string
   String get timeString {
@@ -55,6 +58,22 @@ class TimerProvider extends ChangeNotifier {
     if (_mode != mode) {
       _mode = mode;
       reset();
+      notifyListeners();
+    }
+  }
+
+  /// Toggle countdown direction (reverse: 60->0, forward: 0->60)
+  void toggleCountdownDirection() {
+    if (!_isRunning) {
+      _isReverseCountdown = !_isReverseCountdown;
+      notifyListeners();
+    }
+  }
+
+  /// Set countdown direction
+  void setCountdownDirection(bool isReverse) {
+    if (!_isRunning) {
+      _isReverseCountdown = isReverse;
       notifyListeners();
     }
   }
