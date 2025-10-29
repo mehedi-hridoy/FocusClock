@@ -17,8 +17,8 @@ NC='\033[0m' # No Color
 # Release information
 VERSION="1.0.0"
 TAG="v1.0.0"
-APK_PATH="build/app/outputs/flutter-apk/app-release.apk"
-APK_NAME="focus-clock-v1.0.0.apk"
+APK_PATH="build/app/outputs/flutter-apk/FocusClock.apk"
+APK_NAME="FocusClock.apk"
 
 echo -e "${GREEN}✓ Release APK built successfully!${NC}"
 echo ""
