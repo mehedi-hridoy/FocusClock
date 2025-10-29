@@ -61,17 +61,37 @@ class AlarmScreen extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(
-                        Icons.alarm_off,
-                        size: 80,
-                        color: primaryColor.withOpacity(0.3),
+                      Container(
+                        padding: const EdgeInsets.all(32),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: primaryColor.withOpacity(0.1),
+                          border: Border.all(
+                            color: primaryColor.withOpacity(0.3),
+                            width: 2,
+                          ),
+                        ),
+                        child: Icon(
+                          Icons.alarm_add,
+                          size: 80,
+                          color: primaryColor.withOpacity(0.5),
+                        ),
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: 24),
                       Text(
                         'No alarms set',
                         style: GoogleFonts.comfortaa(
-                          fontSize: 18,
-                          color: primaryColor.withOpacity(0.5),
+                          fontSize: 20,
+                          color: primaryColor.withOpacity(0.6),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        'Tap + to add an alarm',
+                        style: GoogleFonts.comfortaa(
+                          fontSize: 14,
+                          color: primaryColor.withOpacity(0.4),
                         ),
                       ),
                     ],
@@ -90,23 +110,29 @@ class AlarmScreen extends StatelessWidget {
                     );
                   },
                 ),
-          floatingActionButton: FloatingActionButton(
-            onPressed: () {
+          floatingActionButton: GestureDetector(
+            onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const AddAlarmScreen()),
               );
             },
-            backgroundColor: primaryColor,
-            elevation: 8,
             child: Container(
               width: 56,
               height: 56,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.black.withOpacity(0.3),
+                color: Colors.grey[900],
+                border: Border.all(
+                  color: primaryColor.withOpacity(0.3),
+                  width: 1.5,
+                ),
               ),
-              child: const Icon(Icons.add, color: Colors.white, size: 32),
+              child: Icon(
+                Icons.add,
+                color: primaryColor.withOpacity(0.8),
+                size: 28,
+              ),
             ),
           ),
         );
@@ -150,6 +176,24 @@ class AlarmScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             child: Row(
               children: [
+                // Alarm icon
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: alarm.isEnabled
+                        ? primaryColor.withOpacity(0.15)
+                        : Colors.grey.withOpacity(0.05),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Icon(
+                    Icons.alarm,
+                    color: alarm.isEnabled
+                        ? primaryColor.withOpacity(0.7)
+                        : Colors.grey.withOpacity(0.5),
+                    size: 24,
+                  ),
+                ),
+                const SizedBox(width: 16),
                 // Time and label
                 Expanded(
                   child: Column(
@@ -200,16 +244,73 @@ class AlarmScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                // Toggle switch
-                Switch(
-                  value: alarm.isEnabled,
-                  onChanged: (value) {
+                // Custom toggle switch
+                GestureDetector(
+                  onTap: () {
                     alarmProvider.toggleAlarm(alarm.id);
                   },
-                  activeColor: Colors.white,
-                  activeTrackColor: primaryColor,
-                  inactiveThumbColor: Colors.grey[600],
-                  inactiveTrackColor: Colors.grey[800],
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 300),
+                    curve: Curves.easeInOut,
+                    width: 70,
+                    height: 36,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: alarm.isEnabled ? primaryColor : Colors.grey[800],
+                      border: Border.all(
+                        color: alarm.isEnabled
+                            ? primaryColor
+                            : Colors.grey[700]!,
+                        width: 2,
+                      ),
+                    ),
+                    child: Stack(
+                      children: [
+                        // ON/OFF text
+                        Center(
+                          child: Padding(
+                            padding: EdgeInsets.only(
+                              left: alarm.isEnabled ? 8 : 0,
+                              right: alarm.isEnabled ? 0 : 8,
+                            ),
+                            child: Text(
+                              alarm.isEnabled ? 'ON' : 'OFF',
+                              style: GoogleFonts.comfortaa(
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                                color: alarm.isEnabled
+                                    ? Colors.black
+                                    : Colors.grey[600],
+                                letterSpacing: 0.5,
+                              ),
+                            ),
+                          ),
+                        ),
+                        // Animated circle
+                        AnimatedPositioned(
+                          duration: const Duration(milliseconds: 300),
+                          curve: Curves.easeInOut,
+                          left: alarm.isEnabled ? 36 : 2,
+                          top: 2,
+                          child: Container(
+                            width: 30,
+                            height: 30,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.2),
+                                  blurRadius: 4,
+                                  offset: const Offset(0, 2),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ],
             ),

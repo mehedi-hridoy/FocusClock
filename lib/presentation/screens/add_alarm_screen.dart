@@ -230,7 +230,7 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
 
                   // AM/PM selector
                   SizedBox(
-                    width: 70,
+                    width: 90,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -242,26 +242,28 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                           },
                           child: Container(
                             padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 8,
+                              horizontal: 20,
+                              vertical: 12,
                             ),
                             decoration: BoxDecoration(
-                              color: _isAM ? primaryColor : Colors.transparent,
-                              borderRadius: BorderRadius.circular(8),
+                              color: _isAM ? primaryColor : Colors.grey[900],
+                              borderRadius: BorderRadius.circular(12),
+                              border: Border.all(
+                                color: _isAM ? primaryColor : Colors.grey[700]!,
+                                width: 2,
+                              ),
                             ),
                             child: Text(
                               'AM',
                               style: GoogleFonts.comfortaa(
-                                fontSize: 18,
-                                color: _isAM
-                                    ? Colors.white
-                                    : primaryColor.withOpacity(0.4),
-                                fontWeight: FontWeight.w600,
+                                fontSize: 20,
+                                color: _isAM ? Colors.black : Colors.grey[600],
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                           ),
                         ),
-                        const SizedBox(height: 8),
+                        const SizedBox(height: 12),
                         GestureDetector(
                           onTap: () {
                             setState(() {
@@ -270,21 +272,25 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
                           },
                           child: Container(
                             padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 8,
+                              horizontal: 20,
+                              vertical: 12,
                             ),
                             decoration: BoxDecoration(
-                              color: !_isAM ? primaryColor : Colors.transparent,
-                              borderRadius: BorderRadius.circular(8),
+                              color: !_isAM ? primaryColor : Colors.grey[900],
+                              borderRadius: BorderRadius.circular(12),
+                              border: Border.all(
+                                color: !_isAM
+                                    ? primaryColor
+                                    : Colors.grey[700]!,
+                                width: 2,
+                              ),
                             ),
                             child: Text(
                               'PM',
                               style: GoogleFonts.comfortaa(
-                                fontSize: 18,
-                                color: !_isAM
-                                    ? Colors.white
-                                    : primaryColor.withOpacity(0.4),
-                                fontWeight: FontWeight.w600,
+                                fontSize: 20,
+                                color: !_isAM ? Colors.black : Colors.grey[600],
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                           ),
