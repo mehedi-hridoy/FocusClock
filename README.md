@@ -29,53 +29,101 @@ Focus Clock is your LED desk clock replacement — a full-featured Android app d
 
 ### 🎬 Onboarding Experience
 
-![Onboarding 1](docs/screenshots/onboarding/onboarding1.png)
-![Onboarding 2](docs/screenshots/onboarding/onboarding2.png)
-![Onboarding 3](docs/screenshots/onboarding/onboarding3.png)
-![Onboarding 4](docs/screenshots/onboarding/onboarding4.png)
-![Onboarding 5](docs/screenshots/onboarding/onboarding5.png)
-![Onboarding 6](docs/screenshots/onboarding/onboarding6.png)
+<table>
+  <tr>
+    <td><img src="docs/screenshots/onboarding/onboarding1.png" alt="Onboarding 1"/></td>
+    <td><img src="docs/screenshots/onboarding/onboarding2.png" alt="Onboarding 2"/></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/onboarding/onboarding3.png" alt="Onboarding 3"/></td>
+    <td><img src="docs/screenshots/onboarding/onboarding4.png" alt="Onboarding 4"/></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/onboarding/onboarding5.png" alt="Onboarding 5"/></td>
+    <td><img src="docs/screenshots/onboarding/onboarding6.png" alt="Onboarding 6"/></td>
+  </tr>
+</table>
 
 ### 🏠 Home Screen
 
-![Home Page](docs/screenshots/home/homePage.png)
+<table>
+  <tr>
+    <td><img src="docs/screenshots/home/homePage.png" alt="Home Page"/></td>
+  </tr>
+</table>
 
 ### 🕐 Watch Faces
 
-![Clock Face 1](docs/screenshots/clock/clock1.png)
-![Clock Face 2](docs/screenshots/clock/clock2.png)
-![Clock Face 3](docs/screenshots/clock/clock3.png)
-![Clock Face 4](docs/screenshots/clock/clock4.png)
+<table>
+  <tr>
+    <td><img src="docs/screenshots/clock/clock1.png" alt="Clock Face 1"/></td>
+    <td><img src="docs/screenshots/clock/clock2.png" alt="Clock Face 2"/></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/clock/clock3.png" alt="Clock Face 3"/></td>
+    <td><img src="docs/screenshots/clock/clock4.png" alt="Clock Face 4"/></td>
+  </tr>
+</table>
 
 ### ⏱️ Timer
 
-![Timer 1](docs/screenshots/timer/timer1.png)
-![Timer 2](docs/screenshots/timer/timer2.png)
-![Timer 3](docs/screenshots/timer/timer3.png)
+<table>
+  <tr>
+    <td><img src="docs/screenshots/timer/timer1.png" alt="Timer 1"/></td>
+    <td><img src="docs/screenshots/timer/timer2.png" alt="Timer 2"/></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/timer/timer3.png" alt="Timer 3"/></td>
+  </tr>
+</table>
 
 ### ⏲️ Stopwatch
 
-![Stopwatch](docs/screenshots/stopwatch/stopwatch.png)
+<table>
+  <tr>
+    <td><img src="docs/screenshots/stopwatch/stopwatch.png" alt="Stopwatch"/></td>
+  </tr>
+</table>
 
 ### 🔔 Alarms
 
-![Alarm List](docs/screenshots/alarm/alarm.png)
-![Alarm 2](docs/screenshots/alarm/alarm2.png)
-![Alarm 3](docs/screenshots/alarm/alarm3.png)
-![Alarm 4](docs/screenshots/alarm/alarm4.png)
-![Alarm 5](docs/screenshots/alarm/alarm5.png)
+<table>
+  <tr>
+    <td><img src="docs/screenshots/alarm/alarm.png" alt="Alarm List"/></td>
+    <td><img src="docs/screenshots/alarm/alarm2.png" alt="Alarm 2"/></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/alarm/alarm3.png" alt="Alarm 3"/></td>
+    <td><img src="docs/screenshots/alarm/alarm4.png" alt="Alarm 4"/></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/alarm/alarm5.png" alt="Alarm 5"/></td>
+  </tr>
+</table>
 
 ### 📝 Reminders
 
-![Reminder 1](docs/screenshots/reminder/remainder1.png)
-![Reminder 2](docs/screenshots/reminder/remainder2.png)
-![Reminder 3](docs/screenshots/reminder/remainder3.png)
-![Reminder 4](docs/screenshots/reminder/remainder4.png)
-![Reminder 5](docs/screenshots/reminder/remainder5.png)
+<table>
+  <tr>
+    <td><img src="docs/screenshots/reminder/remainder1.png" alt="Reminder 1"/></td>
+    <td><img src="docs/screenshots/reminder/remainder2.png" alt="Reminder 2"/></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/reminder/remainder3.png" alt="Reminder 3"/></td>
+    <td><img src="docs/screenshots/reminder/remainder4.png" alt="Reminder 4"/></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/reminder/remainder5.png" alt="Reminder 5"/></td>
+  </tr>
+</table>
 
 ### ⚙️ Settings
 
-![Settings](docs/screenshots/settings/settings.png)
+<table>
+  <tr>
+    <td><img src="docs/screenshots/settings/settings.png" alt="Settings"/></td>
+  </tr>
+</table>
 
 ---
 
